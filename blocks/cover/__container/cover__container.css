@@ -1,0 +1,30 @@
+.cover__container {
+  min-height: 740px;
+  position: relative;
+  background-image: url(./images/cover__background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2A2C2F;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.cover__container:hover::before {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1279px) {
+
+  .cover__container {
+    min-height: calc(100vw * .625);
+  }
+}

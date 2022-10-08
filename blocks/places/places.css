@@ -1,0 +1,12 @@
+.places {
+  max-width: var(--content-wrap);
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .places {
+    max-width: none;
+  }
+}

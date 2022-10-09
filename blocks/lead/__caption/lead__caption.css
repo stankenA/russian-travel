@@ -13,3 +13,10 @@
     margin-left: 24px;
   }
 }
+
+@media screen and (max-width: 767px) {
+
+  .lead__caption {
+    margin-left: 16px;
+  }
+}
